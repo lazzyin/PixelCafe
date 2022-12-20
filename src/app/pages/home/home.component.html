@@ -1,0 +1,48 @@
+<div class="banner">
+    <div class="content">
+        <h1 class="mb-5">Venha recuperar seu HP com nossos cafés</h1>
+        <a routerLink="menu">Veja o menu</a>
+    </div>
+</div>
+<div class="container mt-5 mb-5">
+    <h1 class="text-center mb-4">Beneficios da  <span class="highlight">Pixel Cafe</span></h1>
+    
+    <div class="row mt-5">        
+        <div class="col-lg-4">
+            <div class="stepBox mt-2">
+               <h1>Conforto</h1>
+               <img src="assets/img/comfy_coffee_shop.gif" alt="comfy_coffee_shop"/>
+            <p>Oferecemos um local aconchegante e confortavel aos clientes</p>
+            </div> 
+        </div>            
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+               <h1>Rapidez</h1>
+               <img src="assets/img/coffee_cup.gif" alt="coffee cup"/>
+               <p>Nossos baristas entregam seu café em poucos minutos</p>
+               </div>            
+        </div>
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>Delivery</h1>
+                <img src="assets/img/kiki_delivery.gif" alt="kiki_delivery"/>
+                <p>Peça seu café pelo site, ou outros meios, e receba no conforto de sua casa</p>
+                </div>            
+        </div>
+    </div>
+</div>
+
+<!--DRINKS-->
+<div class="container mt-4 mb-4">
+    <h1 class="text-center">Melhores cafés</h1>
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor="let d of CoffeData;index as i">
+            <div class="drinkbox" *ngIf="i<=3">
+                <img src="{{d.CoffeImg}}"/>
+                <h1>{{d.CoffeName}}</h1>
+                <p>{{d.CoffePrice | currency:'USD'}}</p>
+            </div>
+        </div>
+    </div>
+    <a routerLink="menu" class="viewmorebtn">Ver mais</a>
+</div>

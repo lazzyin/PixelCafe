@@ -1,0 +1,18 @@
+.navbar-dark .navbar-nav .nav-link{
+    font-weight: bold;
+}
+
+.navbar-brand{
+    font-weight:bold;
+    font-size:24px;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color:var(--secondary-color);
+}
+
+.navbar-dark .navbar-nav .nav-link.active-link{
+    color:var(--secondary-color);
+    font-weight: bold;
+    text-decoration: underline;
+
+}

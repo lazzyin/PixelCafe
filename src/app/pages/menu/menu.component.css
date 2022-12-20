@@ -1,0 +1,15 @@
+.drinkbox{
+    padding:10px 10px;
+}
+.drinkbox img{
+    width:100%;
+    height:250px;
+    object-fit: cover;
+    border-radius:5px;
+}
+
+.drinkbox h1{
+    font-size:18px;
+    margin-top:20px;
+    font-weight:bold;
+}

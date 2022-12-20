@@ -1,0 +1,19 @@
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+        <h1>Bebidas e Drinks</h1>
+        <div class="col-lg-4" *ngFor="let d of CoffeData">
+
+            <div class="drinkbox card mt-3 mb-3">
+                <img src="{{d.CoffeImg}}" alt="{{d.CoffeName}}" class="card-img">
+                <h1 class="card-title">{{d.CoffeName}}</h1>
+                <p class="card-text">{{d.CoffeDetails}}</p>
+                <p class="card-text">{{d.CoffePrice| currency:'USD'}}</p>
+                <a class="btn btn-outline-dark" [routerLink]="['/menu',d.id]">Ver mais</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
